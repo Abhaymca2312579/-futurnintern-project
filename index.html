@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Welcome to Our Recipe Website!</h1>
+        <p>Explore our collection of delicious recipes and cooking tips!</p>
+        <button id="get-started-btn">Get Started</button>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes">
+        <h2>Our Recipes</h2>
+        <div class="recipe-card" id="recipe-1">
+            <h3>Recipe 1: Chicken Fajitas</h3>
+            <p>Ingredients: chicken breast, bell peppers, onions, tortillas</p>
+            <p>Instructions: Cook chicken and vegetables, serve with tortillas</p>
+            <button class="read-more-btn">Read More</button>
+        </div>
+        <div class="recipe-card" id="recipe-2">
+            <h3>Recipe 2: Vegetable Soup</h3>
+            <p>Ingredients: mixed vegetables, broth, tomato paste</p>
+            <p>Instructions: Saute vegetables, add broth and tomato paste, simmer</p>
+            <button class="read-more-btn">Read More</button>
+        </div>
+    </section>
+
+    <!-- Recipe Upload Section -->
+    <section id="upload-recipe">
+        <h2>Upload Your Recipe</h2>
+        <form id="recipe-upload-form">
+            <label for="recipe-title">Recipe Title:</label>
+            <input type="text" id="recipe-title" name="title" required><br><br>
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea><br><br>
+            <label for="steps">Steps:</label>
+            <textarea id="steps" name="steps" required></textarea><br><br>
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" name="image"><br><br>
+            <input type="submit" value="Upload Recipe">
+        </form>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section id="search-filter">
+        <h2>Search Recipes</h2>
+        <input type="text" id="searchInput" placeholder="Search by recipe name">
+        <select id="cuisineFilter">
+            <option value="">Select Cuisine</option>
+            <option value="Italian">Italian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Indian">Indian</option>
+            <!-- Add more cuisines as needed -->
+        </select>
+        <select id="difficultyFilter">
+            <option value="">Select Difficulty</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+        <button id="searchBtn">Search</button>
+    </section>
+
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Contact us for questions or feedback!</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Recipe Website</p>
+    </footer>
+
+    <!-- <script src="app.js"></script> -->
+</body>
+</html>
